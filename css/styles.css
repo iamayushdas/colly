@@ -1,20 +1,20 @@
-body{
+body {
   font-family: "Montserrat";
 }
 
 
-#title{
+#title {
   background-color: #393e46;
 }
 
-h1{
+h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   line-height: 1.5;
   color: white;
 }
 
-h2{
+h2 {
   color: white;
   font-family: "Montserrat-bold", sans-serif;
   font-size: 2.5rem;
@@ -23,26 +23,27 @@ h2{
 }
 
 
-h3{
+h3 {
   font-family: 'Montserrat-bold', sans-serif;
   font-weight: bolder;
 }
 
-p{
+p {
   color: #8f8f8f;
   font-weight: bold;
 }
 
-.container-fluid{
+.container-fluid {
   padding: 2% 10%;
 }
 
 /* Navigation bar */
 
-.navbar{
-  padding:0 0 5%;
+.navbar {
+  padding: 0 0 5%;
 }
-.navbar-brand{
+
+.navbar-brand {
   font-family: "Ubuntu";
   font-size: 2.5rem;
   font-weight: bold;
@@ -50,114 +51,154 @@ p{
 
 }
 
-.nav-item{
+.nav-item {
   padding: 0 12px;
 }
 
-.nav-link{
+.nav-link {
   font-size: 18px;
 }
 
-.butt{
-  margin:5% 3% 5% 0;
+.butt {
+  margin: 5% 3% 5% 0;
 }
 
-.title-image{
+.title-image {
   width: 50%;
   height: 95%;
+  min-width: 300px;
   transform: rotate(25deg);
   margin-left: 20%;
 }
 
-#features{
+#features {
   padding: 7% 12%;
   background-color: white;
 }
-.feature-box{
+
+.feature-box {
   text-align: center;
   padding: 5%;
 }
 
-.icon{
+.icon {
   padding-bottom: 2%;
 }
 
-.icon:hover{
+.icon:hover {
   color: #8f8f8f;
 }
 
-#testimonials{
+#testimonials {
   padding: 7% 10%;
   background-color: #393e46;
   text-align: center;
-
 }
 
-.carousel-item{
+.carousel-item h2 {
+  font-size: 1.5rem;
+}
+
+
+.carousel-item {
   padding: 7% 15%;
 }
 
-.tees{
+.tees {
 
   width: 50%;
   border-radius: 20%;
   margin: 20px;
 
 }
-.logo{
-padding-right: 2%;
-color: white;
+
+.logo {
+  padding-right: 2%;
+  color: white;
 
 }
 
-.pricehead{
+.pricehead {
   color: black;
 }
 
-#pricing{
-  padding: 100px;
+.pricing-cards {}
+
+#pricing {
+  /* padding: 100px; */
+  width: 80%;
+  padding: 100px 0;
+  margin: auto;
   text-align: center;
 }
 
-.pricehead{
-  font-family: "Montserrat-bolder",sans-serif;
+.pricehead {
+  font-family: "Montserrat-bolder", sans-serif;
   font-weight: bold;
-  color:#393e46;
+  color: #393e46;
 }
 
-.pricecol{
+.pricecol {
   padding: 3% 2%;
 }
 
 
 @media (max-width:1024px) {
-  #title{
+  #title {
     text-align: center;
   }
-  .title-image{
+
+  .title-image {
     transform: rotate(0);
-    margin-left: 7%;
+    margin: auto;
+    width: 85%;
   }
 }
+
+@media (max-width:768px) {
+  .title-text {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .butt {
+    width: 75%;
+  }
+
+  .fab {
+    padding: 0 15px 0 0;
+    text-align: left;
+  }
+}
+
 /* get informed */
 
 
-#footer{
-  padding: 7% 5%;
+#footer {
+  /* padding: 7% 5%; */
   text-align: center;
 }
 
-.social-icon{
+.social-icon {
   margin: 20px 10px;
+  font-size: 2rem;
+  padding: 12px;
 
 }
 
 
 /* LOGIN */
-body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-input[type=text], input[type=password] {
+form {
+  border: 3px solid #f1f1f1;
+}
+
+input[type=text],
+input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -208,10 +249,11 @@ span.psw {
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
-     display: block;
-     float: none;
+    display: block;
+    float: none;
   }
+
   .cancelbtn {
-     width: 100%;
+    width: 100%;
   }
 }
