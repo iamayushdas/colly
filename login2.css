@@ -1,10 +1,13 @@
 body {
 	font-family: "Montserrat", sans-serif;
-	background: #f7edd5;
+	background:#393e46 ;
+	background: -webkit-linear-gradient(to right, #000000,#393e46 );
+	background: linear-gradient(to right, #000000, #393e46);
 }
 
 .container {
 	max-width: 900px;
+	
 }
 
 a {
@@ -38,6 +41,12 @@ section#formHolder {
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 	transition: all 0.6s cubic-bezier(1, -0.375, 0.285, 0.995);
 	z-index: 9999;
+}
+
+.fa-chevron-circle-left{
+	color: #fff;
+	
+	
 }
 
 .brand.active {
@@ -87,9 +96,9 @@ section#formHolder {
 }
 
 .brand .heading h2 {
-	/* font-size: 70px;
+	font-size: 70px;
 	font-weight: 700;
-	text-transform: uppercase; */
+	text-transform: uppercase;
 	margin-bottom: 0;
 }
 
@@ -128,25 +137,24 @@ section#formHolder {
 	border-radius: 30px;
 }
 
-.brand .success-msg p,
-.brand .success-msg a {
+.brand .success-msg p, .brand .success-msg a {
 	transition: all 0.9s;
 	transform: translateY(20px);
 	opacity: 0;
 }
 
-.brand .success-msg p.active,
-.brand .success-msg a.active {
+.brand .success-msg p.active, .brand .success-msg a.active {
 	transform: translateY(0);
 	opacity: 1;
 }
 
 .form {
 	position: relative;
+	
 }
 
 .form .form-peice {
-	background: #fff;
+	background: rgba(224, 219, 219, 0.103);
 	min-height: 480px;
 	margin-top: 30px;
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -279,15 +287,13 @@ footer p {
 	color: #777;
 }
 
-footer p a,
-footer p a:focus {
+footer p a, footer p a:focus {
 	color: #b8b09f;
 	transition: all .3s;
 	text-decoration: none !important;
 }
 
-footer p a:hover,
-footer p a:focus:hover {
+footer p a:hover, footer p a:focus:hover {
 	color: #f95959;
 }
 
@@ -343,7 +349,7 @@ footer p a:focus:hover {
 		left: 0;
 	}
 
-	section#formHolder .form .form-peice>form {
+	section#formHolder .form .form-peice > form {
 		width: 100% !important;
 		padding: 60px;
 		left: 50%;
